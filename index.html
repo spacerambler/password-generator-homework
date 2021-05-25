@@ -13,24 +13,24 @@
     
     <div class="container"> 
         <!--container for generator-->
-        <h2>Generate a Password</h2>
-       <div class="results-container">
-
+        <h2>Generate A Password...</h2>
+       <div class="password-container">
+            <span></span>
 
 
        </div>
     <div class="settings">
         <form>
             <label>Password Length</label>
-            <input type="number"><br>
+            <input type="number" id="length" min="8" max="128" value="16"><br>
             <label>Lower Case</label>
-            <input type="checkbox"><br>
+            <input type="checkbox" id="lowercase"><br>
             <label>Upper Case</label>
-            <input type="checkbox"><br>
+            <input type="checkbox" id="uppercase"><br>
             <label>Numbers</label>
-            <input type="checkbox"><br>
+            <input type="checkbox" id="numbers"><br>
             <label>Symbols</label>
-            <input type="checkbox"><br>
+            <input type="checkbox" id="symbols"><br>
         </form>
     </div>
        <button class="button">Generate Password</button>
