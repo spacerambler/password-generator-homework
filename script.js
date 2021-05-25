@@ -53,3 +53,24 @@ var randomFunctions = {
     number: getRandomNumber,
     specialCharacter: getRandomSpecialCharacter,
 }
+
+/* Set up DOM elements, connected to form*/
+var resultEl = document.getElementById("result");
+var lengthEl = document.getElementById("length");
+var lowerEl = document.getElementById("lowercase");
+var upperEl = document.getElementById("uppercase");
+var numbersEl = document.getElementById("numbers");
+var symbolsEl = document.getElementById("symbols");
+var generateEl = document.getElementById("generate");
+
+/* Add events */
+generateEl.addEventListener("click", function(){
+    var length = +lengthEl.value;
+    var hasLower = lowerEl.checked;
+    var hasUpper = upperEl.checked;
+    var hasNumbers = numbersEl.checked;
+    var hasSymbols = symbolsEl.checked;
+
+    //console.log(length, hasLower, hasUpper, hasNumbers, hasSymbols);
+    resultEl.innerText(length, hasLower, hasUpper, hasNumbers, hasSymbols);
+})
