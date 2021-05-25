@@ -6,19 +6,34 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Password Generator</title>
     <link rel="stylesheet" href="reset.css"> <!--normalize browsers-->
-    <link rel="stylesheet" href="stylesheet.css"> <!--custom page style sheet-->>
+    <link rel="stylesheet" href="stylesheet.css"> <!--custom page style sheet-->
 </head>
 <body>
     <h1>Password Generator</h1>
     
-    <div> 
+    <div class="container"> 
         <!--container for generator-->
         <h2>Generate a Password</h2>
-       <div class="generator">
+       <div class="results-container">
+
 
 
        </div>
-
+    <div class="settings">
+        <form>
+            <label>Password Length</label>
+            <input type="number"><br>
+            <label>Lower Case</label>
+            <input type="checkbox"><br>
+            <label>Upper Case</label>
+            <input type="checkbox"><br>
+            <label>Numbers</label>
+            <input type="checkbox"><br>
+            <label>Symbols</label>
+            <input type="checkbox"><br>
+        </form>
+    </div>
+       <button class="button">Generate Password</button>
     </div>
 
     <footer>Made by Keely Bailey | 2021</footer>

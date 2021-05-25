@@ -1,0 +1,75 @@
+/*Name my colors*/
+:root {
+    --darkblue: #587291;
+    --bluegreen: #2f97c1;
+    --darkteal: #1ccad8;
+    --teal: #15e6cd;
+    --green: #0cf574; 
+    --white: #fff;
+    --black: #000;
+}
+
+/*Add body style*/
+body {
+    font-weight: 400;
+    font-style: normal;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: -0.02em;
+    color: white;
+    background-color: var(--bluegreen);
+}
+
+h1 {
+    text-align: center;
+}
+
+/*Add universal selectors*/
+* {
+    box-sizing: border-box;
+    border: 0;
+    margin: 0;
+    padding: 0;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+button {
+    background-color:var(--green);;
+    border-radius: 4px;
+    color: #000;
+    font-size: 20px;
+    line-height: 16px;
+    max-width: 255px;
+    padding: 20px 30px;
+    text-align: center;
+    margin-top: 0.6em;
+    display: block;
+    margin-left:auto;
+    margin-right:auto;
+    box-shadow: 0 2px 5px var(--darkteal);
+}
+
+/*Add Container class*/
+.container {
+    display: block;
+    margin-left:auto;
+    margin-right:auto;
+    background-color: black;
+    box-shadow: 6px 6px 12px var(--teal);
+	padding: 20px;
+	width: 350px;
+	max-width: 100%;
+}
+
+.password-container {
+    background-color: var(--white);
+	padding: 20px;
+	width: 350px;
+	max-width: 100%;
+}
+
+/*style footer*/
+footer {
+    padding: 10px;
+    text-align: center;
+  }

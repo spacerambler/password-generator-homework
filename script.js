@@ -36,6 +36,20 @@ function getRandomNumber(){
     return String.fromCharCode(Math.floor(Math.random()*10)+48)
 }
 
-/*function getRandomSpecialCharacter(){
+function getRandomSpecialCharacter(){
+    var symbols = "!@#$%^&*?><"
+    return symbols[Math.floor(Math.random() * symbols.length)]
+}
+/* TESTING FUNCTIONS
+console.log(getRandomLowerLetter());
+console.log(getRandomUpperLetter());
+console.log(getRandomNumber());
+console.log(getRandomSpecialCharacter());
+*/
 
-}*/
+var randomFunctions = {
+    lower: getRandomLowerLetter,
+    upper: getRandomUpperLetter,
+    number: getRandomNumber,
+    specialCharacter: getRandomSpecialCharacter,
+}
