@@ -61,6 +61,14 @@ button {
 	max-width: 100%;
 }
 
+.is-hidden {
+    visibility: hidden;
+}
+
+.settings.show {
+    visibility: visible;
+}
+
 .password-container {
     background-color: var(--white);
 	margin-top: 10px;
