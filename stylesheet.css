@@ -65,7 +65,7 @@ button {
     visibility: hidden;
 }
 
-.settings.show {
+.is-shown {
     visibility: visible;
 }
 
